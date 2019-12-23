@@ -1,0 +1,12 @@
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\bin\Release\tizen40\HARU_ASD.deps.json
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\bin\Release\tizen40\HARU_ASD.dll
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.Properties.Resources.resources
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.csproj.GenerateResource.cache
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\App.xaml.g.cs
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\AuthenticationPage.xaml.g.cs
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\MainPage.xaml.g.cs
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.csproj.CoreCompileInputs.cache
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.AssemblyInfoInputs.cache
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.AssemblyInfo.cs
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\XamlC.stamp
+C:\Users\NSL\source\repos\HARU_ASD\HARU_ASD\obj\Release\tizen40\HARU_ASD.dll
