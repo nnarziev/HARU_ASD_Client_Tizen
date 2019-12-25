@@ -1600,11 +1600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NSL\\source\\repos\\HARU_ASD\\HARU_ASD\\HARU_ASD.csproj",
+      "projectUniqueName": "C:\\Users\\NSL\\source\\repos\\HARU_ASD_Client_Tizen\\HARU_ASD\\HARU_ASD.csproj",
       "projectName": "HARU_ASD",
-      "projectPath": "C:\\Users\\NSL\\source\\repos\\HARU_ASD\\HARU_ASD\\HARU_ASD.csproj",
+      "projectPath": "C:\\Users\\NSL\\source\\repos\\HARU_ASD_Client_Tizen\\HARU_ASD\\HARU_ASD.csproj",
       "packagesPath": "C:\\Users\\NSL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NSL\\source\\repos\\HARU_ASD\\HARU_ASD\\obj\\",
+      "outputPath": "C:\\Users\\NSL\\source\\repos\\HARU_ASD_Client_Tizen\\HARU_ASD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -100,11 +100,11 @@
     </Reference>
     <Reference URI="bin%2FHARU_ASD.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-      <DigestValue>mRen78WsmHZ0ZkhPgT8llZNW5eJzUpZkCsshS4lUpKc=</DigestValue>
+      <DigestValue>F/hjfm+A0pIKHgf4Ep5BeTpUhTP3cBSs8o+Eimsp4KU=</DigestValue>
     </Reference>
     <Reference URI="bin%2FHARU_ASD.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-      <DigestValue>Hca7ElaZzrwfeDxxyZWn09YakRh6+nqK53xxs4zjGTE=</DigestValue>
+      <DigestValue>fV3JMdeKbAfFxhrj7k7TSWxmNT/Za7oT+7qaohNqDfM=</DigestValue>
     </Reference>
     <Reference URI="bin%2FHarfBuzzSharp.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
@@ -112,7 +112,7 @@
     </Reference>
     <Reference URI="author-signature.xml">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-      <DigestValue>NkaHA/qgGVI0eLiut9dZ8zdjv8nC68InGpvRLr1m9Po=</DigestValue>
+      <DigestValue>O4nHCKVd9l1tigTHHDdNF/kWM6LLe69YC/7uEGSZ5aY=</DigestValue>
     </Reference>
     <Reference URI="#prop">
       <Transforms>
@@ -123,11 +123,11 @@
     </Reference>
   </SignedInfo>
   <SignatureValue>
-IGN8qBEb6GKsSfRbbVTelBJF8TLqueoybD2LUb9rCnczvHcIA2sUw7z86kzCib9aQdQC1dwqftxH
-O7w68FSZuY56pjIqoOfhogXRGOkwCT1aBzfO7VyBt2b23ZfG1vnyaPLd0YOWhArFSh82+IFg/LUE
-EDmJkV0P5Fat8jPV/ZygQSDEYvqYgfPGCazd972U9ulGDnm4U/8dwTan9GdPUMSwvChUWhDmiuDy
-jkaip+QodveFWnLex01qiMDmZcBApUrsflIihcs4CIgIucRkcAJAlm6NIsfayn05BtHuv/UG7ao4
-cZLYkkB8FRHYEL71G6yFtH7B2TdH8AeOu6Sj5Q==
+NrxY994kV9WQFi5GOQjcPt9myiFkFOwIDN112G2FRzkoMzOzrdu1z70gCgwK/5guaI03x/8WNahv
+btMwS6bhRQWCCGsp2Fb+Ql0pe9IAiGFsESPwtzD5vwQAySPO7n77BJ9iy51/lYtyoDWXcNuCwPNN
+NGQtsZqVc+goAAQ9tjWQkXCfxvmwwEWVzngYaCms2jJvSdaP1P5lY0vVvrPLbdiNF4vR6l1uTUP1
+DYEcfe0sUk4WbpYaNxUG5GFfRuamrLik23vnUrOFmip7govHJlvKEA3yxVbhCGNHA5AiwNqsOKqS
+73xmz8w3ni/GjqxoDzn/uDXMARyY1FZ3DWeQBw==
 </SignatureValue>
   <KeyInfo>
     <X509Data>

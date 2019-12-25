@@ -100,11 +100,11 @@
     </Reference>
     <Reference URI="bin%2FHARU_ASD.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-      <DigestValue>mRen78WsmHZ0ZkhPgT8llZNW5eJzUpZkCsshS4lUpKc=</DigestValue>
+      <DigestValue>F/hjfm+A0pIKHgf4Ep5BeTpUhTP3cBSs8o+Eimsp4KU=</DigestValue>
     </Reference>
     <Reference URI="bin%2FHARU_ASD.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-      <DigestValue>Hca7ElaZzrwfeDxxyZWn09YakRh6+nqK53xxs4zjGTE=</DigestValue>
+      <DigestValue>fV3JMdeKbAfFxhrj7k7TSWxmNT/Za7oT+7qaohNqDfM=</DigestValue>
     </Reference>
     <Reference URI="bin%2FHarfBuzzSharp.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
@@ -119,11 +119,11 @@
     </Reference>
   </SignedInfo>
   <SignatureValue>
-RYpGIAbDfDRKUhNspuSQPtTM1KjtZi1TITuA+K2cTRzkRu+yFmtZMC2NzWVqjfvaZvnu/84tw9FX
-f5vqJLH3/01sc2Bw70uKkoqgKlV/hlUJMx8VwiBFdquNJD2zGjaRJFBk1AJSkVojT/R8K0durlKh
-3tTH0SX7c25c4tgqpU0/9lIR1AwcFxbXyhq44PGHnZrVAAZvPejcSd5oP7Lgsdv7BamcQ2bpgQsf
-8+UBy3JCj1F+INHufwXzfbhJuXQv2dEfMAZ4AHSway3388AMG6YHt70OZNzo9L+EW1VAzCngjpiI
-2tEhQ78R7CNZW3M66XKQsnNfaDQnPGQM1x3HtQ==
+tqR4YU7IRgdm6cmSV6Xdoq37YCo40Lj3td0SYiwE+9h1onH/hdPUGCV4zvVyBPnv1/J01nR7369k
+E7SID1IIxGGPqNtAmbvmo6n7TjxgR1MttPNcV3tKC5e8zFrDqfoR3/sk5hKOzpVupDJNa3VPnCFO
++7UveYsiiOkfrfVcWaUZ6O2UpWxiVdCv+cCGtekdMEpKMaJMCXdEQsNL0iMRNkuKjEnbrLWUlfMI
+znToGnav5J9EfBO1EVcQ9gsmvItVEjCKaWL/5kEqyOG1jOnrCsxmQ+hlXO3gqDO9DMLkhtwDFHTE
+zMYtVx8MqzBUZq4BjwdgsPmjAT5EGDVKu9TlpA==
 </SignatureValue>
   <KeyInfo>
     <X509Data>

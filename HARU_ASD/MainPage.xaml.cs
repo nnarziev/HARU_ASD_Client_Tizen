@@ -33,7 +33,7 @@ namespace HARU_ASD
             TerminateFilesCounterThread();
             StartFilesCounterThread();
 
-            if (CountSensorDataFiles() > 2)
+            if (CountSensorDataFiles() > 1)
                 Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(true); });
             else
                 Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(false); });
@@ -43,7 +43,7 @@ namespace HARU_ASD
             else
                 Device.BeginInvokeOnMainThread(() => { InternetStatusText(false); });
 
-            //Check service is running and enable / disable start button
+            //Check service is running and enable / disable buttons
             if (dataCollectorThread != null)
             {
                 if (!dataCollectorThread.ThreadState.Equals(System.Threading.ThreadState.Running))
@@ -53,6 +53,7 @@ namespace HARU_ASD
                         ServiceStatusText(false);
                         EnableStartBtn(true);
                         EnableStopBtn(false);
+                        EnableSignOutBtn(true);
                     });
                 }
                 else
@@ -62,6 +63,7 @@ namespace HARU_ASD
                         ServiceStatusText(true);
                         EnableStartBtn(false);
                         EnableStopBtn(true);
+                        EnableSignOutBtn(false);
                     });
                 }
             }
@@ -72,6 +74,7 @@ namespace HARU_ASD
                     ServiceStatusText(false);
                     EnableStartBtn(true);
                     EnableStopBtn(false);
+                    EnableSignOutBtn(true);
                 });
             }
             base.OnAppearing();
@@ -160,6 +163,9 @@ namespace HARU_ASD
             Tizen.Applications.Preference.Set("logged_in", false);
             Tizen.Applications.Preference.Set("username", "");
             Tizen.Applications.Preference.Set("password", "");
+
+            EraseSensorData(); //removing all sensor data when logged out
+
             Device.BeginInvokeOnMainThread(() =>
             {
                 IsEnabled = true;
@@ -199,7 +205,7 @@ namespace HARU_ASD
         #region UI Event callbacks
         private void ReportDataCollectionClick(object sender, EventArgs e)
         {
-            if (CountSensorDataFiles() > 2 && WiFiManager.ConnectionState == WiFiConnectionState.Connected)
+            if (CountSensorDataFiles() > 1 && WiFiManager.ConnectionState == WiFiConnectionState.Connected)
             {
                 if (submitDataThread == null || !submitDataThread.ThreadState.Equals(System.Threading.ThreadState.Running))
                     StartSubmitDataThread();
@@ -319,13 +325,14 @@ namespace HARU_ASD
                     ServiceStatusText(true);
                     EnableStartBtn(false);
                     EnableStopBtn(true);
+                    EnableSignOutBtn(false);
                 });
 
                 while (!stopCollectorThread)
                 {
                     Tizen.Log.Debug(TAG, "Files: " + CountSensorDataFiles());
 
-                    if (!isDataSubmitRunning && CountSensorDataFiles() > 2)
+                    if (!isDataSubmitRunning && CountSensorDataFiles() > 1)
                         Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(true); });
                     else
                         Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(false); });
@@ -358,6 +365,7 @@ namespace HARU_ASD
                     ServiceStatusText(false);
                     EnableStartBtn(true);
                     EnableStopBtn(false);
+                    EnableSignOutBtn(true);
                 });
             });
             dataCollectorThread.IsBackground = true;
@@ -421,7 +429,11 @@ namespace HARU_ASD
             {
                 isDataSubmitRunning = true;
                 Tizen.Log.Debug(TAG, "File submit STARTED");
-                Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(false); });
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    EnableUploadBtn(false);
+                    EnableSignOutBtn(false);
+                });
 
                 // Get list of files and sort in increasing order
                 string[] filePaths = Directory.GetFiles(Tools.APP_DIR, "*.csv");
@@ -449,7 +461,11 @@ namespace HARU_ASD
                 stopSubmitDataThread = false;
 
                 isDataSubmitRunning = false;
-                Device.BeginInvokeOnMainThread(() => { EnableUploadBtn(true); });
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    EnableUploadBtn(true);
+                    EnableSignOutBtn(true);
+                });
             });
             submitDataThread.IsBackground = true;
             submitDataThread.Start();
@@ -524,6 +540,18 @@ namespace HARU_ASD
             {
                 reportDataColButton.IsEnabled = false;
                 reportDataColButton.Source = ImageSource.FromFile("upload_disable.png");
+            }
+        }
+
+        private void EnableSignOutBtn(bool enable)
+        {
+            if (enable)
+            {
+                signOutButton.IsEnabled = true;
+            }
+            else
+            {
+                signOutButton.IsEnabled = false;
             }
         }
 
